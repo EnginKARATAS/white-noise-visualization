@@ -1,15 +1,6 @@
 canvas {
   border: 1px solid black;
 }
-.parentCanvas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.canvasBody {
-    width: 100;
-    height: 100;
-}
+ 
 
 
