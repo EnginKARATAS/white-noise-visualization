@@ -6,6 +6,8 @@
 
 `npm start`
 
+![electronRuntimeAppears](/images/electronRuntimeAppears.png)
+
 ###create desktop app 
 
 `npm install -g electron-packager`
