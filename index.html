@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>White Noise Visualization</title>
 </head>
 <body>
-
     <canvas id="canvas" width="800" height="450" style="border: solid 1px;"></canvas>
 
     <script src="index.js"></script>
 
+    <script src="./renderer.js"></script>
 </body>
 </html>

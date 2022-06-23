@@ -1,26 +1,19 @@
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
+const { app, BrowserWindow } = require("electron");
 
-var width = canvas.width; //800
-var height = canvas.height; //500
+const createWindow = () => {
+  const win = new BrowserWindow({
+    width: 840,
+    height: 530,
+  });
 
-var initalX = 0,
-  initalY = 0;
-
-var squareSize = 100
-let whiteNoise = () => {
-  ctx.beginPath();
-  
-  for (let x = 0; x < 800; x += 5) {
-    for (let y = 0; y < 450; y += 5) {
-      ctx.moveTo(initalX + x, initalY + y);
-      ctx.fillStyle = Math.round(Math.random())?"black":"white";
-      ctx.fillRect(x, y, squareSize, squareSize);
-      ctx.closePath();
-    }
-  }
-
-  ctx.stroke();
+  win.loadFile("index.html");
 };
 
-setInterval(whiteNoise, 25);
+app.whenReady().then(() => {
+  createWindow();
+});
+
+app.on("window-all-closed", () => {
+  if (process.platform !== "darwin") app.quit();
+});
+
