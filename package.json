@@ -1,0 +1,31 @@
+{
+  "name": "white-noise-visualization",
+  "version": "1.0.0",
+  "description": "white noise visualization made with js canvas. ",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnginKARATAS/white-noise-visualization.git"
+  },
+  "keywords": [
+    "white-noise",
+    "noise",
+    "javascript",
+    "electronjs",
+    "electron",
+    "desktop-app"
+  ],
+  "author": "Engin Karataş",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnginKARATAS/white-noise-visualization/issues"
+  },
+  "homepage": "https://github.com/EnginKARATAS/white-noise-visualization#readme",
+  "devDependencies": {
+    "electron": "^19.0.6"
+  }
+}
